@@ -1,39 +1,43 @@
-GPU Miner
-Overview
-This is a GPU miner that utilizes Numba and CUDA to mine blocks on the Bitcoin network. It communicates with a Bitcoin node to receive mining templates and then uses the mining template to mine the block.
+# GPU Miner for Bitcoin
 
-Requirements
-CUDA capable GPU
-Numba
-CUDA Toolkit
-Installation
-Clone the repository to your local machine:
-bash
-Copy code
-git clone https://github.com/<username>/GPU-Miner.git
-Install the required packages:
-Copy code
-pip install numba
-Install the CUDA Toolkit from the NVIDIA website.
-Configuration
-Open the config.cfg file and set the following parameters:
-btcNode_ip: IP address of the Bitcoin node.
-btcNode_port: Port number of the Bitcoin node.
-btcNode_user: User name for the Bitcoin node.
-btcNode_pass: Password for the Bitcoin node.
-btc_public_address: Public address for the miner to receive rewards.
-miner_id: Unique identifier for the miner.
-debug_level: Debug level for the miner. Set to 0 for minimal output.
-Running the Miner
-Open a terminal and navigate to the directory containing the miner.
-Run the miner using the following command:
-css
-Copy code
-python main.py
-Contributing
-Fork the repository.
-Create a new branch for your changes.
-Commit your changes and push to the new branch.
-Create a pull request to the original repository.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+A high-performance GPU miner for Bitcoin. This miner is designed to use the latest GPU processing capabilities to increase the efficiency and speed of mining. The miner is built on Numba, a JIT compiler for Python that allows for high-performance GPU programming, and CUDA, a parallel computing platform and API for general-purpose computing on GPUs.
+
+## Prerequisites
+
+- NVIDIA GPU with CUDA support
+- CUDA Toolkit
+- Numba
+- Python 3
+
+## Features
+
+- High-performance GPU mining
+- Supports the latest GPU processing capabilities
+- Built on Numba and CUDA for optimized performance
+
+## Usage
+
+1. Clone the repository to your local machine
+git clone https://github.com/[username]/GPU-Miner-for-Bitcoin.git
+
+2. Navigate to the repository
+
+3. Install the required packages
+
+4. Edit the configuration file to specify your Bitcoin node, public address, miner ID, and debug level.
+
+5. Run the miner
+
+## Contributing
+
+We welcome contributions to this project. To contribute, please follow these steps:
+
+1. Fork the repository
+2. Create a new branch for your changes
+3. Commit your changes
+4. Push to your branch
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
